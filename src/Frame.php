@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: rafa
- * Date: 17/05/16
- * Time: 16:47
- */
 
 require_once dirname(__DIR__)."/vendor/autoload.php";
 
@@ -47,7 +41,7 @@ class Frame
 
     public function anotate($pins)
     {
-        if ($this->first_roll == null) {
+        if ($this->first_roll === null) {
             $this->first_roll = $pins;
         } else {
             $this->second_roll = $pins;
@@ -57,11 +51,11 @@ class Frame
 
     public function isFrameCompleted()
     {
-        return $this->second_roll != null;
+        return $this->second_roll !== null;
     }
 
     public function isFull()
     {
-	    return $this->second_roll != null;
+	    return $this->second_roll !== null;
     }
 }
