@@ -1,0 +1,22 @@
+{
+    "name": "rafaesteller/bowling_kata",
+    "description": "Bowling kata in PHP",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Rafael Esteller",
+            "email": "esteller.rafa@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "monolog/monolog": "1.*",
+        "phpunit/phpunit": "4.8.*"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "psr-0": { "": "src/" }
+        }
+    }
+}
