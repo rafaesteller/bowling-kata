@@ -53,6 +53,13 @@ class GameTest extends PHPUnit_Framework_TestCase
 	}
 
 
+	public function  testSumBonuses(){
+		$this->rollSpare();
+		$this->g->roll(3);
+		$this->rollMany(17, 0);
+		$this->assertEquals(3, $this->g->sumBonuses());
+	}
+
     public function testOneSpare()
     {
         $this->rollSpare();
